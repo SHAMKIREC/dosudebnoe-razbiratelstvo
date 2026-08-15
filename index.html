@@ -1,181 +1,143 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Досудебное разбирательство - Подготовка претензий для физических лиц</title>
-  <meta name="description" content="Помощь физическим лицам в подготовке досудебных претензий для возврата денег и защиты прав без суда. Оформление документов и информационная поддержка.">
-  <link rel="canonical" href="https://shamkirec.github.io/dosudebnoe-razbiratelstvo/">
-  <meta property="og:title" content="Досудебное разбирательство - Подготовка претензий для физических лиц">
-  <meta property="og:description" content="Помощь физическим лицам в подготовке досудебных претензий для возврата денег и защиты прав без суда. Оформление документов и информационная поддержка.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://shamkirec.github.io/dosudebnoe-razbiratelstvo/">
-  <meta property="og:image" content="https://shamkirec.github.io/dosudebnoe-razbiratelstvo/og-image.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Досудебное разбирательство - Подготовка претензий для физических лиц">
-  <meta name="twitter:description" content="Помощь физическим лицам в подготовке досудебных претензий для возврата денег и защиты прав без суда.">
-  <meta name="twitter:image" content="https://shamkirec.github.io/dosudebnoe-razbiratelstvo/og-image.jpg">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#09070f">
+<title>Секретная Миссия — Party Game</title>
+<style>
+:root{--bg:#08070d;--panel:rgba(25,21,36,.82);--pink:#ff2f7d;--purple:#8b5cf6;--gold:#ffc857;--green:#45e09f;--red:#ff5577;--text:#fff;--muted:#aaa3b5;--border:rgba(255,255,255,.09)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%}
+body{background:radial-gradient(circle at 15% 10%,rgba(255,47,125,.18),transparent 28%),radial-gradient(circle at 85% 20%,rgba(139,92,246,.18),transparent 30%),radial-gradient(circle at 50% 100%,rgba(255,47,125,.09),transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh;overflow-x:hidden}
+.background{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.35;animation:floatOrb 8s ease-in-out infinite}
+.orb.one{width:300px;height:300px;background:#ff1971;top:-120px;left:-80px}
+.orb.two{width:350px;height:350px;background:#7138ff;right:-140px;top:20%;animation-delay:-3s}
+.orb.three{width:260px;height:260px;background:#ff286f;bottom:-120px;left:40%;animation-delay:-5s}
+@keyframes floatOrb{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(20px,-20px) scale(1.1)}}
+.app{position:relative;z-index:1;width:min(1100px,calc(100% - 28px));margin:auto;padding:25px 0 50px}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:25px}
+.logo{display:flex;align-items:center;gap:12px}.logo-icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;font-size:25px;background:linear-gradient(135deg,#ff2f7d,#8b5cf6);box-shadow:0 10px 35px rgba(255,47,125,.3)}
+.logo-title{font-size:20px;font-weight:900;letter-spacing:-.5px}.logo-subtitle{font-size:11px;color:var(--muted);margin-top:2px;text-transform:uppercase;letter-spacing:1px}
+.round{padding:9px 14px;border-radius:30px;background:rgba(255,255,255,.06);border:1px solid var(--border);font-size:13px;color:#ddd}
+.screen{display:none}.screen.active{display:block}
+.hero{text-align:center;padding:55px 15px 35px}.hero-symbol{width:110px;height:110px;margin:0 auto 25px;border-radius:32px;display:grid;place-items:center;font-size:55px;background:linear-gradient(135deg,rgba(255,47,125,.22),rgba(139,92,246,.25));border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 70px rgba(255,47,125,.2);animation:heroFloat 4s ease-in-out infinite}
+@keyframes heroFloat{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-9px) rotate(2deg)}}
+.hero h1{font-size:clamp(42px,8vw,78px);line-height:.95;font-weight:950;letter-spacing:-4px;background:linear-gradient(90deg,#fff,#ff5c9d,#9b7cff,#fff);background-size:300%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gradientMove 5s linear infinite}
+@keyframes gradientMove{0%{background-position:0%}100%{background-position:300%}}
+.hero p{max-width:620px;margin:20px auto 0;color:var(--muted);font-size:16px;line-height:1.6}
+.panel{background:var(--panel);border:1px solid var(--border);border-radius:26px;padding:25px;backdrop-filter:blur(25px);-webkit-backdrop-filter:blur(25px);box-shadow:0 25px 80px rgba(0,0,0,.35)}
+.panel-title{font-size:22px;font-weight:850;margin-bottom:7px}.panel-description{color:var(--muted);font-size:14px;margin-bottom:20px}
+.players{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.player-input{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.045);border:1px solid var(--border);padding:9px;border-radius:15px}
+.player-number{width:35px;height:35px;flex-shrink:0;border-radius:11px;display:grid;place-items:center;background:rgba(255,47,125,.12);color:#ff76a9;font-weight:800}
+.player-input input{width:100%;border:0;outline:0;background:transparent;color:white;font-size:15px}.player-input input::placeholder{color:#696270}
+.button{width:100%;border:0;border-radius:16px;padding:16px 20px;font-size:16px;font-weight:850;cursor:pointer;color:white;transition:transform .15s ease,filter .15s ease,box-shadow .15s ease}
+.button:hover{transform:translateY(-2px);filter:brightness(1.08)}.button:active{transform:scale(.98)}
+.button-primary{background:linear-gradient(135deg,#ff2f7d,#8b5cf6);box-shadow:0 12px 35px rgba(255,47,125,.25)}
+.button-green{background:linear-gradient(135deg,#27c987,#16a878)}.button-dark{background:rgba(255,255,255,.06);border:1px solid var(--border)}.button-red{background:linear-gradient(135deg,#ff416c,#c52b57)}
+.buttons{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+.game-grid{display:grid;grid-template-columns:280px 1fr;gap:18px}.players-board{display:flex;flex-direction:column;gap:8px}
+.board-player{display:flex;align-items:center;gap:10px;padding:10px;border-radius:15px;background:rgba(255,255,255,.035);border:1px solid transparent;transition:.2s}
+.board-player.current{background:linear-gradient(135deg,rgba(255,47,125,.16),rgba(139,92,246,.12));border-color:rgba(255,47,125,.35);box-shadow:0 10px 35px rgba(255,47,125,.08)}
+.avatar{width:40px;height:40px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(135deg,#ff2f7d,#8b5cf6);font-weight:900}
+.board-info{min-width:0;flex:1}.board-name{font-size:14px;font-weight:750;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.board-score{font-size:12px;color:var(--muted)}.score{font-size:13px;font-weight:850;color:#ffc857}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:15px}.stat{padding:13px;border-radius:15px;background:rgba(255,255,255,.04);border:1px solid var(--border)}.stat-label{font-size:11px;color:var(--muted)}.stat-value{font-size:20px;font-weight:900;margin-top:4px}
+.mission-card{position:relative;overflow:hidden;min-height:490px;display:flex;flex-direction:column;justify-content:center;padding:45px;border-radius:30px;background:radial-gradient(circle at 90% 10%,rgba(255,47,125,.18),transparent 35%),radial-gradient(circle at 10% 90%,rgba(139,92,246,.17),transparent 35%),rgba(20,17,29,.9);border:1px solid rgba(255,255,255,.08);box-shadow:0 30px 100px rgba(0,0,0,.45)}
+.mission-card::before{content:"";position:absolute;width:240px;height:240px;right:-100px;bottom:-100px;border-radius:50%;border:1px solid rgba(255,255,255,.06);box-shadow:0 0 0 40px rgba(255,255,255,.015),0 0 0 80px rgba(255,255,255,.01)}
+.mission-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:25px}.badge{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border-radius:30px;background:rgba(255,47,125,.1);color:#ff78aa;font-size:12px;font-weight:800;border:1px solid rgba(255,47,125,.2)}.xp{color:var(--gold);font-weight:900;font-size:14px}
+.mission-card h2{font-size:clamp(28px,4vw,43px);line-height:1.12;letter-spacing:-1.5px;max-width:750px}.mission-card p{margin-top:15px;color:var(--muted);line-height:1.6;font-size:14px}
+.secret{margin-top:30px;display:flex;align-items:center;gap:10px;color:#8d8696;font-size:12px}.secret-icon{width:28px;height:28px;display:grid;place-items:center;border-radius:9px;background:rgba(255,255,255,.05)}
+.leaderboard{margin-top:15px}.leader-row{display:flex;align-items:center;gap:12px;padding:12px;border-radius:14px;background:rgba(255,255,255,.035);margin-top:7px}.place{width:28px;font-weight:900;color:var(--gold)}.leader-name{flex:1;font-weight:700}.leader-points{font-weight:900;color:var(--gold)}
+.winner{text-align:center;padding:60px 20px}.trophy{font-size:90px;animation:trophyFloat 2.5s ease-in-out infinite}
+@keyframes trophyFloat{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-15px) rotate(3deg)}}
+.winner h1{font-size:clamp(38px,7vw,65px);margin-top:20px}.winner-name{margin-top:12px;font-size:30px;font-weight:950;color:#ff5c9d}.winner p{margin-top:12px;color:var(--muted)}
+.confetti{position:fixed;width:8px;height:14px;top:-20px;z-index:100;animation:confettiFall linear forwards}
+@keyframes confettiFall{to{transform:translateY(110vh) rotate(720deg)}}
+@media(max-width:760px){.app{width:min(100% - 18px,600px);padding-top:15px}.hero{padding-top:35px}.hero h1{letter-spacing:-2px}.players{grid-template-columns:1fr}.game-grid{grid-template-columns:1fr}.players-board{display:grid;grid-template-columns:repeat(2,1fr)}.mission-card{min-height:440px;padding:28px}.mission-card h2{font-size:30px}.stats{grid-template-columns:repeat(3,1fr)}.buttons{grid-template-columns:1fr}.header{margin-bottom:15px}}
+@media(max-width:420px){.panel{padding:17px;border-radius:20px}.mission-card{padding:22px;border-radius:22px}.mission-card h2{font-size:26px}.players-board{grid-template-columns:1fr}}
+</style>
 </head>
-<body class="bg-white text-gray-900">
-  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center py-4">
-        <div class="flex items-center">
-          <div class="text-xl font-bold text-gray-900">Досудебное разбирательство</div>
-        </div>
-        <nav class="hidden md:flex space-x-8">
-          <a href="#services" class="text-gray-600 hover:text-gray-900 transition-colors">Услуги</a>
-          <a href="#examples" class="text-gray-600 hover:text-gray-900 transition-colors">Примеры</a>
-          <a href="#process" class="text-gray-600 hover:text-gray-900 transition-colors">Процесс</a>
-          <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors">Контакты</a>
-        </nav>
-        <div class="flex items-center space-x-4">
-          <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Получить помощь</a>
-        </div>
-        <div class="md:hidden">
-          <button type="button" class="text-gray-600 hover:text-gray-900">
-            <i data-lucide="menu" class="w-6 h-6"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
+<body>
+<div class="background"><div class="orb one"></div><div class="orb two"></div><div class="orb three"></div></div>
+<div class="app">
+<header class="header">
+<div class="logo"><div class="logo-icon">🎭</div><div><div class="logo-title">СЕКРЕТНАЯ МИССИЯ</div><div class="logo-subtitle">Party Game</div></div></div>
+<div class="round" id="roundLabel">Подготовка</div>
+</header>
 
-  <main><section class="bg-white py-16 px-4 sm:px-6 lg:px-8"><div class="max-w-4xl mx-auto text-center"><h1 class="text-4xl font-bold text-gray-900 mb-6">Досудебное разбирательство</h1><p class="text-xl text-gray-600 mb-4 max-w-3xl mx-auto">Поможем вернуть деньги без суда</p><p class="text-lg text-gray-500 mb-8 max-w-3xl mx-auto">Подготовим грамотную досудебную претензию с учетом вашей ситуации</p><div class="flex justify-center gap-4 mb-8 text-sm"><span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Бесплатная консультация</span><span class="bg-green-100 text-green-800 px-4 py-2 rounded-full">Подготовка документа за 1–2 дня</span></div><div class="mt-12"><img data-ai="generate" data-slot="hero-main" data-prompt="Professional legal documents and papers on a desk with scales of justice, representing pre-trial dispute resolution" data-ar="16:9" src="https://cdn.ailandingpage.ai/landingpage_io/user-generate/5e382c92-fa40-4a75-b732-97e75a06661b/5e382c92-fa40-4a75-b732-97e75a06661b/hero/hero-main-05dcab9c5b6744e1b540b1bd6c2745a4.png" alt="Досудебное разбирательство" width="1200" height="675" class="w-full rounded-2xl object-cover shadow-sm" loading="lazy" decoding="async" fetchpriority="auto"></div></div></section><section id="services" class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8"><div class="max-w-6xl mx-auto"><h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Чем можем помочь</h2><div class="grid md:grid-cols-3 gap-8"><div id="refund-courses" class="bg-white p-6 rounded-lg shadow-sm"><img data-ai="generate" data-slot="services-1" data-prompt="Online course interface on laptop screen showing poor quality educational content" data-ar="4:3" src="https://cdn.ailandingpage.ai/landingpage_io/user-generate/5e382c92-fa40-4a75-b732-97e75a06661b/5e382c92-fa40-4a75-b732-97e75a06661b/services/services-1-51c89341e7df4b7383e2762425e5fd7c.png" alt="Возврат средств за онлайн-курсы" width="800" height="600" class="w-full rounded-lg object-cover mb-4" loading="lazy" decoding="async" fetchpriority="auto"><h3 class="text-xl font-semibold text-gray-900 mb-3">Возврат средств за некачественные онлайн-курсы</h3><p class="text-gray-600">Подготовка документов для возврата денег за онлайн-обучение низкого качества или не соответствующее заявленным характеристикам</p></div><div id="refund-denied" class="bg-white p-6 rounded-lg shadow-sm"><img data-ai="generate" data-slot="services-2" data-prompt="Rejected refund request document with red stamp, representing denial of money return" data-ar="4:3" src="https://cdn.ailandingpage.ai/landingpage_io/user-generate/5e382c92-fa40-4a75-b732-97e75a06661b/5e382c92-fa40-4a75-b732-97e75a06661b/services/services-2-0323a41e246b42a891272b337822c346.png" alt="Отказ в возврате денег" width="800" height="600" class="w-full rounded-lg object-cover mb-4" loading="lazy" decoding="async" fetchpriority="auto"><h3 class="text-xl font-semibold text-gray-900 mb-3">Отказ в возврате денег за обучение</h3><p class="text-gray-600">Оформление претензий при необоснованном отказе образовательных организаций вернуть средства за обучение</p></div><div id="unpaid-work" class="bg-white p-6 rounded-lg shadow-sm"><img data-ai="generate" data-slot="services-3" data-prompt="Unpaid invoice and completed work documents on desk, representing non-payment for services" data-ar="4:3" src="https://cdn.ailandingpage.ai/landingpage_io/user-generate/5e382c92-fa40-4a75-b732-97e75a06661b/5e382c92-fa40-4a75-b732-97e75a06661b/services/services-3-1761277bc56749998a89a11f622e246a.png" alt="Неоплата выполненных работ" width="800" height="600" class="w-full rounded-lg object-cover mb-4" loading="lazy" decoding="async" fetchpriority="auto"><h3 class="text-xl font-semibold text-gray-900 mb-3">Неоплата выполненных работ</h3><p class="text-gray-600">Информационная поддержка в составлении требований об оплате выполненных работ или оказанных услуг</p></div></div></div></section><section id="examples" class="bg-white py-16 px-4 sm:px-6 lg:px-8"><div class="max-w-6xl mx-auto"><h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Примеры ситуаций</h2><div class="grid md:grid-cols-2 gap-8"><div class="bg-gray-50 p-8 rounded-lg"><img data-ai="generate" data-slot="examples-1" data-prompt="Skillbox online course interface showing disappointing course content and student frustration" data-ar="16:9" src="https://cdn.ailandingpage.ai/landingpage_io/user-generate/5e382c92-fa40-4a75-b732-97e75a06661b/5e382c92-fa40-4a75-b732-97e75a06661b/examples/examples-1-ea81d01df9f5424c8a9b52f9d6530217.png" alt="Возврат денег за онлайн-курс Skillbox" width="1200" height="675" class="w-full rounded-lg object-cover mb-6" loading="lazy" decoding="async" fetchpriority="auto"><h3 class="text-xl font-semibold text-gray-900 mb-4">Возврат денег за онлайн-курс</h3><p class="text-gray-600 mb-4">Вы приобрели курс в Skillbox или другой онлайн-школе, но качество обучения оказалось значительно ниже заявленного. Материалы устарели, преподаватели не отвечают на вопросы, обещанная поддержка отсутствует.</p><p class="text-gray-600"><strong>Результат:</strong> Подготовка обоснованной претензии с требованием полного или частичного возврата средств на основании нарушения условий договора.</p></div><div class="bg-gray-50 p-8 rounded-lg"><img data-ai="generate" data-slot="examples-2" data-prompt="Freelancer working on computer with completed project but unpaid invoice, showing work payment dispute" data-ar="16:9" src="https://cdn.ailandingpage.ai/landingpage_io/user-generate/5e382c92-fa40-4a75-b732-97e75a06661b/5e382c92-fa40-4a75-b732-97e75a06661b/examples/examples-2-04763e78962d442185bb643775ae815b.png" alt="Неоплата выполненных работ физическому лицу" width="1200" height="675" class="w-full rounded-lg object-cover mb-6" loading="lazy" decoding="async" fetchpriority="auto"><h3 class="text-xl font-semibold text-gray-900 mb-4">Неоплата выполненных работ</h3><p class="text-gray-600 mb-4">Вы выполнили работу для заказчика (дизайн, копирайтинг, консультации), но он отказывается производить оплату, ссылаясь на различные причины или просто игнорирует ваши обращения.</p><p class="text-gray-600"><strong>Результат:</strong> Оформление официального требования об оплате с указанием правовых последствий неисполнения обязательств.</p></div></div></div></section><section id="process" class="py-16 bg-white"><div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"><h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Как проходит работа</h2><div class="grid md:grid-cols-2 gap-8 items-center"><div class="space-y-8"><div class="flex items-start space-x-4"><div class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold">1</div><div><h3 class="text-lg font-semibold text-gray-900 mb-2">Описание ситуации</h3><p class="text-gray-600">Вы подробно рассказываете о проблеме, предоставляете документы и доказательства нарушения ваших прав.</p></div></div><div class="flex items-start space-x-4"><div class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold">2</div><div><h3 class="text-lg font-semibold text-gray-900 mb-2">Анализ информации</h3><p class="text-gray-600">Изучаем предоставленные материалы, анализируем правовые основания для предъявления претензии.</p></div></div><div class="flex items-start space-x-4"><div class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold">3</div><div><h3 class="text-lg font-semibold text-gray-900 mb-2">Подготовка претензии</h3><p class="text-gray-600">Составляем досудебную претензию с учетом всех правовых норм и особенностей вашей ситуации.</p></div></div><div class="flex items-start space-x-4"><div class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold">4</div><div><h3 class="text-lg font-semibold text-gray-900 mb-2">Выдача готового документа</h3><p class="text-gray-600">Предоставляем готовую претензию с инструкциями по её направлению и дальнейшими рекомендациями.</p></div></div></div><div><img data-ai="generate" data-slot="process-steps" data-prompt="Профессиональная подготовка документов, стопка бумаг и ручка на рабочем столе, деловая атмосфера" data-ar="4:3" src="https://cdn.ailandingpage.ai/landingpage_io/user-generate/5e382c92-fa40-4a75-b732-97e75a06661b/5e382c92-fa40-4a75-b732-97e75a06661b/process/process-steps-8ce647dc26ab4bffad4d3b2d4eadfc29.png" alt="Процесс подготовки документов" width="800" height="600" class="w-full rounded-2xl object-cover shadow-sm" loading="lazy" decoding="async" fetchpriority="auto"></div></div></div></section><section id="trust" class="bg-white py-16 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">
-      Почему нам доверяют
-    </h2>
+<section id="startScreen" class="screen active">
+<div class="hero"><div class="hero-symbol">🕵️</div><h1>Секретная<br>Миссия</h1><p>Игра для компании до 10 человек. Получай тайные задания, выполняй их, зарабатывай очки и не раскрывай свою миссию.</p></div>
+<div class="panel"><div class="panel-title">👥 Кто играет?</div><div class="panel-description">Добавьте от 2 до 10 игроков.</div><div id="playersContainer" class="players"></div><button class="button button-primary" style="margin-top:18px" onclick="startGame()">🚀 НАЧАТЬ ИГРУ</button></div>
+</section>
 
-    <div class="grid md:grid-cols-4 gap-8 text-center">
+<section id="gameScreen" class="screen">
+<div class="game-grid">
+<aside><div class="panel"><div class="panel-title">👥 Игроки</div><div class="players-board" id="playersBoard"></div></div></aside>
+<main>
+<div class="stats"><div class="stat"><div class="stat-label">Раунд</div><div class="stat-value" id="roundStat">1</div></div><div class="stat"><div class="stat-label">Ход</div><div class="stat-value" id="turnStat">1</div></div><div class="stat"><div class="stat-label">Всего</div><div class="stat-value" id="totalStat">0</div></div></div>
+<div id="missionCard" class="mission-card">
+<div class="mission-top"><div class="badge" id="missionBadge">🔥 РАЗОГРЕВ</div><div class="xp" id="missionXP">+20 XP</div></div>
+<h2 id="missionText">Нажми кнопку, чтобы получить тайную миссию.</h2>
+<p id="missionDescription">Выполни задание так, чтобы остальные не поняли, что именно ты пытаешься сделать.</p>
+<div class="secret"><div class="secret-icon">🔒</div>Миссия предназначена только для текущего игрока.</div>
+<div id="actionButtons" class="buttons"><button class="button button-primary" onclick="newMission()">🎲 ПОЛУЧИТЬ МИССИЮ</button></div>
+</div>
+<div id="leaderboard" class="leaderboard panel"><div class="panel-title">🏆 Таблица лидеров</div><div id="leaderboardRows"></div></div>
+</main>
+</div>
+</section>
 
-      <div class="bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">
-          Узкая специализация
-        </h3>
-        <p class="text-gray-600 text-sm">
-          Работаем исключительно с досудебными претензиями и возвратом денежных средств.
-        </p>
-      </div>
+<section id="winnerScreen" class="screen">
+<div class="panel winner"><div class="trophy">🏆</div><h1>Игра окончена!</h1><div class="winner-name" id="winnerName">Победитель</div><p id="winnerScore">0 очков</p><div id="finalLeaderboard" class="leaderboard"></div><button class="button button-primary" style="margin-top:25px" onclick="restartGame()">🔄 ИГРАТЬ СНОВА</button></div>
+</section>
+</div>
 
-      <div class="bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">
-          Опора на законодательство
-        </h3>
-        <p class="text-gray-600 text-sm">
-          Документы составляются с учетом действующих норм и правовой практики.
-        </p>
-      </div>
+<script>
+const missions=[
+{level:"🔥 РАЗОГРЕВ",xp:20,text:"Сделай так, чтобы кто-то улыбнулся из-за твоего вопроса.",description:"Главное — не выдавай, что это было частью миссии."},
+{level:"🔥 РАЗОГРЕВ",xp:20,text:"Добейся, чтобы кто-то рассказал смешную историю из своей жизни.",description:"Постарайся подвести разговор к этому естественно."},
+{level:"🔥 РАЗОГРЕВ",xp:20,text:"Сделай человеку необычный комплимент.",description:"Комплимент должен быть неожиданным, но приятным."},
+{level:"😈 ХИТРАЯ",xp:30,text:"Добейся, чтобы кто-то рассказал о своём самом необычном свидании.",description:"Не спрашивай прямо о миссии."},
+{level:"😈 ХИТРАЯ",xp:30,text:"Спроси кого-нибудь, какой самый странный подарок он получал.",description:"История должна прозвучать от самого игрока."},
+{level:"😈 ХИТРАЯ",xp:30,text:"Добейся, чтобы кто-то рассказал о своей тайной симпатии из прошлого.",description:"Используй обычный разговор."},
+{level:"👑 ЭКСПЕРТ",xp:50,text:"Убедись, что другой игрок сам задаст тебе личный вопрос.",description:"Ты не можешь напрямую попросить его задать вопрос."},
+{level:"👑 ЭКСПЕРТ",xp:50,text:"Добейся, чтобы минимум два человека одновременно начали смеяться.",description:"Никаких очевидных шуток о миссии."},
+{level:"👑 ЭКСПЕРТ",xp:50,text:"Заставь другого игрока произнести выбранное тобой обычное слово.",description:"Выбери слово заранее и аккуратно веди разговор."},
+{level:"💀 ЛЕГЕНДАРНАЯ",xp:100,text:"Сделай так, чтобы другой игрок добровольно рассказал историю, которую раньше не рассказывал этой компании.",description:"Миссия считается выполненной только после рассказа."},
+{level:"💀 ЛЕГЕНДАРНАЯ",xp:100,text:"Устрой ситуацию, в которой минимум три игрока одновременно поддержат твою идею.",description:"Не говори, что это задание."},
+{level:"💀 ЛЕГЕНДАРНАЯ",xp:100,text:"Сделай так, чтобы кто-нибудь сам предложил тебе небольшое испытание.",description:"Не проси об испытании напрямую."}
+];
 
-      <div class="bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">
-          Быстрые сроки
-        </h3>
-        <p class="text-gray-600 text-sm">
-          Подготовка претензии обычно занимает 1–2 рабочих дня после получения информации.
-        </p>
-      </div>
+let players=[],currentPlayer=0,currentMission=null,round=1,turn=1,completedMissions=0;
+const playersContainer=document.getElementById("playersContainer");
+for(let i=0;i<10;i++){const div=document.createElement("div");div.className="player-input";div.innerHTML=`<div class="player-number">${i+1}</div><input id="player-${i}" type="text" maxlength="20" placeholder="Игрок ${i+1}">`;playersContainer.appendChild(div)}
 
-      <div class="bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">
-          Конфиденциальность
-        </h3>
-        <p class="text-gray-600 text-sm">
-          Вся предоставленная информация используется только для подготовки документа.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section><section id="pricing" class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold text-gray-900 mb-8">Стоимость и порядок оплаты</h2>
-    <div class="bg-white p-8 rounded-lg shadow-sm text-left">
-      <p class="text-gray-600 mb-4">Первичная консультация проводится бесплатно.</p>
-      <p class="text-gray-600 mb-4">Стоимость подготовки досудебной претензии определяется индивидуально в зависимости от сложности ситуации и объема документов.</p>
-      <p class="text-gray-600 mb-4">Оплата производится после согласования условий работы.</p>
-      <p class="text-gray-600 mb-8">Вы получаете готовый документ и рекомендации по его направлению.</p>
-      <div class="text-center">
-        <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200">Получить консультацию</a>
-      </div>
-    </div>
-  </div>
-</section><section id="faq" class="bg-white py-16 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Частые вопросы</h2>
-    <div class="space-y-6">
-      <div class="bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Это юридическая услуга?</h3>
-        <p class="text-gray-600">Мы оказываем информационную помощь в подготовке документов и досудебных претензий.</p>
-      </div>
-      <div class="bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Гарантирован ли возврат денег?</h3>
-        <p class="text-gray-600">Результат зависит от конкретной ситуации, однако правильно составленная претензия значительно повышает шансы на добровольное урегулирование спора.</p>
-      </div>
-      <div class="bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">С какими вопросами можно обратиться?</h3>
-        <p class="text-gray-600 mb-4">Мы рассматриваем различные гражданские ситуации, в которых нарушены договоренности или требуется возврат денежных средств.</p>
-        <p class="text-gray-600 mb-2">К таким случаям могут относиться:</p>
-        <ul class="text-gray-600 list-disc list-inside space-y-1">
-          <li>возврат средств за онлайн-курсы и обучение</li>
-          <li>неоплата выполненных работ или услуг</li>
-          <li>отказ вернуть предоплату или задаток</li>
-          <li>некачественно оказанные услуги</li>
-          <li>нарушение сроков выполнения работ</li>
-          <li>споры по договорам оказания услуг</li>
-          <li>возврат денежных средств за инфопродукты и онлайн-сервисы</li>
-        </ul>
-        <p class="text-gray-600 mt-4">Если вы не уверены, подходит ли ваша ситуация — напишите нам для бесплатной предварительной оценки. Мы проанализируем информацию и подскажем возможный порядок действий.</p>
-      </div>
-      <div class="bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Сколько времени занимает подготовка?</h3>
-        <p class="text-gray-600">Обычно 1–2 рабочих дня после получения всей необходимой информации.</p>
-      </div>
-      <div class="bg-gray-50 p-6 rounded-lg">
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Что делать, если после претензии нет ответа?</h3>
-        <p class="text-gray-600">Мы подскажем возможные дальнейшие шаги и порядок действий в зависимости от ситуации.</p>
-      </div>
-    </div>
-  </div>
-</section><section id="contact" class="py-16 bg-gray-50"><div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"><h2 class="text-3xl font-bold text-gray-900 mb-8">Куда обращаться</h2><div class="grid md:grid-cols-2 gap-8 items-center"><div class="space-y-6"><p class="text-lg text-gray-600 mb-8">Свяжитесь с нами для получения информационной поддержки и оформления документов</p><div class="grid grid-cols-2 gap-4"><a href="https://t.me/zks_manager" class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all"><svg class="w-10 h-10 mb-2" viewBox="0 0 24 24" fill="#0088cc"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg><span class="font-medium text-gray-900">Telegram</span></a><a href="https://wa.me/79372296949" class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all"><svg class="w-10 h-10 mb-2" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span class="font-medium text-gray-900">WhatsApp</span></a><a href="https://max.ru/79372296949" class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all"><img src="qwcAPpPtRHafsWuoCywFE.png" alt="MAX" class="w-10 h-10 mb-2 rounded-lg object-cover"><span class="font-medium text-gray-900">MAX</span></a><a href="mailto:zeleny_kontrakt@mail.ru" class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all"><svg class="w-10 h-10 mb-2" viewBox="0 0 24 24" fill="none" stroke="#EA4335" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><span class="font-medium text-gray-900">Email</span></a></div><div class="mt-8"><a href="https://t.me/zks_manager" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200">Получить помощь сейчас</a></div></div><div><img data-ai="generate" data-slot="contact-info" data-prompt="Современные средства связи, телефон и компьютер на рабочем столе, профессиональная обстановка" data-ar="4:3" src="https://cdn.ailandingpage.ai/landingpage_io/user-generate/5e382c92-fa40-4a75-b732-97e75a06661b/5e382c92-fa40-4a75-b732-97e75a06661b/contact/contact-info-4c2720cea462476cbd89c784a5fb4d41.png" alt="Контактная информация" width="800" height="600" class="w-full rounded-2xl object-cover shadow-sm" loading="lazy" decoding="async" fetchpriority="auto"></div></div></div></section></main>
-
-  <footer class="bg-gray-50 border-t border-gray-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div class="col-span-1 md:col-span-2">
-          <div class="text-xl font-bold text-gray-900 mb-4">Досудебное разбирательство</div>
-          <p class="text-gray-600 mb-4">Помощь в подготовке досудебных претензий для физических лиц</p>
-        </div>
-        <div>
-          <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Услуги</h3>
-          <ul class="space-y-2">
-            <li><a href="#refund-courses" class="text-gray-600 hover:text-gray-900">Возврат средств за онлайн-курсы</a></li>
-            <li><a href="#refund-denied" class="text-gray-600 hover:text-gray-900">Отказ в возврате денег</a></li>
-            <li><a href="#unpaid-work" class="text-gray-600 hover:text-gray-900">Неоплата выполненных работ</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Контакты</h3>
-          <ul class="space-y-2">
-            <li><a href="https://t.me/zks_manager" class="text-gray-600 hover:text-gray-900">Telegram</a></li>
-            <li><a href="mailto:zeleny_kontrakt@mail.ru" class="text-gray-600 hover:text-gray-900">Email</a></li>
-            <li><a href="https://wa.me/79372296949" class="text-gray-600 hover:text-gray-900">WhatsApp</a></li>
-            <li><a href="https://max.ru/79372296949" class="text-gray-600 hover:text-gray-900">MAX</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="mt-8 pt-8 border-t border-gray-200">
-        <p class="text-center text-gray-500 text-sm">© 2024 Досудебное разбирательство.<br>Сайт носит информационный характер.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    lucide.createIcons();
-  </script>
-</body></html>
+function startGame(){
+players=[];
+for(let i=0;i<10;i++){const input=document.getElementById(`player-${i}`);const name=input.value.trim();if(name)players.push({name,score:0,missions:0})}
+if(players.length<2){alert("Нужно минимум 2 игрока.");return}
+currentPlayer=0;round=1;turn=1;completedMissions=0;showScreen("gameScreen");updateGame();saveGame()
+}
+function showScreen(id){document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));document.getElementById(id).classList.add("active")}
+function updateGame(){updatePlayersBoard();updateStats();updateLeaderboard();updateRoundLabel()}
+function updatePlayersBoard(){
+const board=document.getElementById("playersBoard");board.innerHTML="";
+players.forEach((player,index)=>{const div=document.createElement("div");div.className="board-player"+(index===currentPlayer?" current":"");const firstLetter=player.name.charAt(0).toUpperCase();div.innerHTML=`<div class="avatar">${firstLetter}</div><div class="board-info"><div class="board-name">${escapeHtml(player.name)}</div><div class="board-score">${player.missions} миссий</div></div><div class="score">${player.score}</div>`;board.appendChild(div)})
+}
+function updateStats(){document.getElementById("roundStat").textContent=round;document.getElementById("turnStat").textContent=turn;document.getElementById("totalStat").textContent=completedMissions}
+function updateRoundLabel(){document.getElementById("roundLabel").textContent=`Ход: ${players[currentPlayer].name}`}
+function newMission(){
+const randomIndex=Math.floor(Math.random()*missions.length);currentMission=missions[randomIndex];
+document.getElementById("missionBadge").textContent=currentMission.level;document.getElementById("missionXP").textContent=`+${currentMission.xp} XP`;document.getElementById("missionText").textContent=currentMission.text;document.getElementById("missionDescription").textContent=currentMission.description;
+document.getElementById("actionButtons").innerHTML=`<button class="button button-green" onclick="missionComplete()">✓ ВЫПОЛНИЛ +${currentMission.xp}</button><button class="button button-red" onclick="skipMission()">↻ ПРОПУСТИТЬ</button>`;animateMission()
+}
+function animateMission(){document.getElementById("missionCard").animate([{transform:"scale(.96)",opacity:".3"},{transform:"scale(1)",opacity:"1"}],{duration:350,easing:"cubic-bezier(.2,.8,.2,1)"})}
+function missionComplete(){if(!currentMission)return;const player=players[currentPlayer];player.score+=currentMission.xp;player.missions+=1;completedMissions++;showFloatingXP(`+${currentMission.xp} XP`);nextTurn()}
+function skipMission(){nextTurn()}
+function nextTurn(){
+currentMission=null;currentPlayer++;
+if(currentPlayer>=players.length){currentPlayer=0;round++}
+turn++;
+document.getElementById("missionBadge").textContent="🎲 НОВАЯ МИССИЯ";document.getElementById("missionXP").textContent="+ XP";document.getElementById("missionText").textContent=`Ход игрока: ${players[currentPlayer].name}`;document.getElementB
