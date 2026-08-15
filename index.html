@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -134,10 +133,4 @@ document.getElementById("missionBadge").textContent=currentMission.level;documen
 document.getElementById("actionButtons").innerHTML=`<button class="button button-green" onclick="missionComplete()">✓ ВЫПОЛНИЛ +${currentMission.xp}</button><button class="button button-red" onclick="skipMission()">↻ ПРОПУСТИТЬ</button>`;animateMission()
 }
 function animateMission(){document.getElementById("missionCard").animate([{transform:"scale(.96)",opacity:".3"},{transform:"scale(1)",opacity:"1"}],{duration:350,easing:"cubic-bezier(.2,.8,.2,1)"})}
-function missionComplete(){if(!currentMission)return;const player=players[currentPlayer];player.score+=currentMission.xp;player.missions+=1;completedMissions++;showFloatingXP(`+${currentMission.xp} XP`);nextTurn()}
-function skipMission(){nextTurn()}
-function nextTurn(){
-currentMission=null;currentPlayer++;
-if(currentPlayer>=players.length){currentPlayer=0;round++}
-turn++;
-document.getElementById("missionBadge").textContent="🎲 НОВАЯ МИССИЯ";document.getElementById("missionXP").textContent="+ XP";document.getElementById("missionText").textContent=`Ход игрока: ${players[currentPlayer].name}`;document.getElementB
+function missionComplete(){if(!currentMission)return;const player=players[currentPlayer];p
